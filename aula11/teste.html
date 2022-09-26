@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fds</title>
+</head>
+<body>
+    <h1>Sua nacionalidade</h1>
+ Onde você mora?  <input type="text" name="area" id="area">
+ <input type="button" value="verificar"onclick='verificar()'>
+ <div id="res">
+
+ </div>
+ <script>
+     function verificar(){
+         var ari = window.document.querySelector('input#area')
+         var res = window.document.querySelector('div#res')
+         var país = (ari.value)
+         res.innerHTML = `<P>Vivendo em <strong>${país}</strong></p>`
+         if(país == '  Brasil'){
+             res.innerHTML = 'Você é brasileiro'
+         }else{
+             res.innerHTML += ' Você é estrangeiro'
+         }
+     }
+ </script>
+    
+</body>
+</html>
