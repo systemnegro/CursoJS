@@ -1,4 +1,4 @@
-let valores = [5,2,7,8,1,9]
+let valores = [5,2,7,8,1,9,8,4]
 
 //console.log(valores)
 /*
